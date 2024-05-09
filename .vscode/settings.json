@@ -1,0 +1,9 @@
+{
+     "terminal.explorerKind": "integrated",
+     "terminal.integrated.accessibleViewPreserveCursorPosition": true,
+     "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+     "terminal.integrated.cursorBlinking": false,
+     "terminal.integrated.environmentChangesIndicator": "warnonly",
+     "terminal.integrated.fontSize": 20,
+     "editor.minimap.autohide": true
+}
