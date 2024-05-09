@@ -1,47 +1,75 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-     font-family: Arial, sans-serif;
-     background-color: #f7f7f7;
-     margin: 0;
-     padding: 0;
-   }
-   .container {
-     max-width: 800px;
-     margin: 20px auto;
-     background-color: #fff;
-     padding: 20px;
-     border-radius: 8px;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   }
-   h1 {
-     text-align: center;
-     color: #333;
-   }
-   .timeline {
-     list-style-type: none;
-     padding: 0;
-   }
-   .event {
-     margin-bottom: 40px;
-     padding-left: 20px;
-     position: relative;
-   }
-   .year {
-     font-weight: bold;
-     font-size: 20px;
-     color: #333;
-   }
-   .description {
-     margin-top: 5px;
-     color: #666;
-   }
-   .event:before {
-     content: '';
-     width: 10px;
-     height: 10px;
-     background-color: #007bff;
-     border-radius: 50%;
-     position: absolute;
-     left: -5px;
-     top: 10px;
-   }
-   
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Alinear los eventos verticalmente */
+}
+
+.event {
+  margin-right: 10px;
+  padding: 10px;
+  position: relative;
+  background-color: #737bd7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.year-image {
+  width: 20px; /* Tamaño de la imagen */
+  height: auto;
+  margin-right: 10px; /* Espacio entre la imagen y la descripción */
+}
+
+.description {
+  margin-top: 10px;
+  color: #0f0e0e;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.event:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: #ff5252;
+  border-radius: 30%;
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  transform: translateX(-50%);
+}
+
+/* Hover effect */
+.event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event-img {
+  width: 100px;
+  height: auto;
+  margin-right: 30px;
+  border-radius: 10px;
+}
